@@ -4,104 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psi Wolontariat - Spacer z Sercem</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="background-wrapper">
-        
-        <main class="app-container">
-            
-            <nav class="navbar">
-                <div class="logo">
-                    <span class="logo-icon"><i class="fa-solid fa-paw"></i></span> Psijaciele
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#" class="active">Start</a></li>
-                    <li><a href="#">O nas</a></li>
-                    <li><a href="#">Psy</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <div class="search-bar">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="Szukaj...">
-                    </div>
-                    <button class="icon-btn"><i class="fa-regular fa-user"></i></button>
-                </div>
+    <header class="header">
+        <div class="container navbar-content">
+            <div class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-paw"></i></span> Psijaciele
+            </div>
+            <nav class="nav-links">
+                <a href="#" class="active">Start</a>
+                <a href="#">O nas</a>
+                <a href="#">Podopieczni</a>
+                <a href="#">Kontakt</a>
             </nav>
+            <div class="nav-actions">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="join-btn">Dołącz do nas</button>
+            </div>
+        </div>
+    </header>
 
-            <section class="hero-section">
-                <div class="hero-content">
-                    <p class="subtitle">Zostań bohaterem schroniska</p>
-                    <h1>
-                        Wyprowadzaj <br>
-                        <span class="script-title">Radość na Spacer</span>
-                    </h1>
-                    <p class="description">
-                        Twój czas to dla nich cały świat. Dołącz do naszej grupy wolontariuszy i podaruj psom ze schroniska chwilę szczęścia, na którą czekają cały tydzień.
-                    </p>
-                    <button class="cta-button">
-                        Zostań Wolontariuszem <i class="fa-solid fa-arrow-right"></i>
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">Wolontariat 2024</span>
+                <h1>
+                    Podaruj Im <br>
+                    <span class="highlight-script">Trochę Szczęścia</span>
+                </h1>
+                <p class="hero-desc">
+                    Schronisko to nie dom, ale dzięki Tobie może stać się lepszym miejscem. Dołącz do naszej ekipy spacerowej i wyprowadzaj psiaki na świat. One czekają właśnie na Ciebie.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">
+                        Zacznij Pomagać <i class="fa-solid fa-arrow-right"></i>
                     </button>
-                    
-                    <div class="floating-stat">
-                        <div class="icon-circle pink"><i class="fa-solid fa-heart"></i></div>
-                        <div>
-                            <strong>150+</strong>
-                            <span>Szczęśliwych psów</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-image-wrapper">
-                    <div class="blob-bg"></div>
-                    <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=2070&auto=format&fit=crop" alt="Dziewczyna z psem" class="hero-img">
-                    
-                    <div class="floating-orb orb-1"></div>
-                    <div class="floating-orb orb-2"></div>
-                </div>
-            </section>
-
-            <section class="bottom-panel">
-                <div class="panel-header">
-                    <h3>Jak możesz pomóc?</h3>
+                    <button class="btn-secondary">
+                        <i class="fa-solid fa-play"></i> Zobacz wideo
+                    </button>
                 </div>
                 
-                <div class="cards-grid">
-                    <article class="info-card">
-                        <div class="card-icon glass-purple">
-                            <i class="fa-solid fa-clock"></i>
-                        </div>
-                        <h4>Harmonogram</h4>
-                        <p>Sprawdź, kiedy organizujemy spacery i zapisz się na dogodny termin.</p>
-                        <a href="#" class="card-link">Zobacz grafik</a>
-                    </article>
-
-                    <article class="info-card active-card">
-                        <div class="card-icon glass-pink">
-                            <i class="fa-solid fa-dog"></i>
-                        </div>
-                        <h4>Nasze Psiaki</h4>
-                        <p>Poznaj mieszkańców schroniska, którzy czekają na Twój spacer.</p>
-                        <a href="#" class="card-link">Zobacz galerię</a>
-                    </article>
-
-                    <article class="info-card">
-                        <div class="card-icon glass-blue">
-                            <i class="fa-solid fa-hand-holding-heart"></i>
-                        </div>
-                        <h4>Wsparcie</h4>
-                        <p>Nie możesz wyprowadzać? Zobacz, jak inaczej możesz wesprzeć schronisko.</p>
-                        <a href="#" class="card-link">Dowiedz się więcej</a>
-                    </article>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <strong>120+</strong>
+                        <span>Psów</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>45</strong>
+                        <span>Wolontariuszy</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>∞</strong>
+                        <span>Merdania ogonem</span>
+                    </div>
                 </div>
-            </section>
+            </div>
 
-        </main>
-    </div>
+            <div class="hero-visual">
+                <div class="blob-shape"></div>
+                <img src="https://images.unsplash.com/photo-1553531580-652231dae097?q=80&w=2070&auto=format&fit=crop" alt="Uśmiechnięta wolontariuszka z psem" class="main-img">
+                
+                <div class="floating-card glass-card">
+                    <div class="icon-box"><i class="fa-solid fa-bone"></i></div>
+                    <div>
+                        <h5>Azor</h5>
+                        <small>Czeka na spacer!</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Jak to działa?</h2>
+                <p>Wybierz obszar, który Cię interesuje i dowiedz się więcej.</p>
+            </div>
+
+            <div class="cards-wrapper">
+                <article class="feature-card">
+                    <div class="card-image-bg" style="background-image: url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&q=80&w=500');"></div>
+                    <div class="card-content">
+                        <div class="icon-circle purple"><i class="fa-regular fa-calendar-check"></i></div>
+                        <h3>Harmonogram</h3>
+                        <p>Zobacz, w jakie dni wyprowadzamy psy i zapisz się na konkretną godzinę.</p>
+                        <a href="#" class="arrow-link">Przejdź do grafiku <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </article>
+
+                <article class="feature-card active">
+                    <div class="card-image-bg" style="background-image: url('https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=500');"></div>
+                    <div class="card-content">
+                        <div class="icon-circle pink"><i class="fa-solid fa-paw"></i></div>
+                        <h3>Nasi Podopieczni</h3>
+                        <p>Poznaj psy, które szukają domu lub chociaż towarzysza na spacer.</p>
+                        <a href="#" class="arrow-link">Zobacz galerię <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-image-bg" style="background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=500');"></div>
+                    <div class="card-content">
+                        <div class="icon-circle blue"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                        <h3>Wsparcie</h3>
+                        <p>Dowiedz się, jak możesz pomóc schronisku darowizną lub karmą.</p>
+                        <a href="#" class="arrow-link">Chcę pomóc <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
